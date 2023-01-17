@@ -43,3 +43,4 @@ class Logistic_Regression():
     Y_pred = 1 / (1 + np.exp( - (X.dot(self.w) + self.b ) )) 
     Y_pred = np.where( Y_pred > 0.5, 1, 0)
     return Y_pred
+  
